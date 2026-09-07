@@ -1,0 +1,40 @@
+Variable,Type,Origin,Description,Model Status
+Marital status,categorical,Original,Student's marital status.,Used
+Application mode,categorical,Original,Method/channel through which the student applied.,Used
+Application order,numeric,Original,Order of application choice.,Used
+Course,categorical,Original,"Original course/program code; used to create Discipline_Group, then removed.",Transformed then removed
+Daytime/evening attendance,categorical,Original,Attendance schedule indicator.,Used
+Previous qualification,categorical,Original,Type of qualification obtained before enrollment.,Used
+Previous qualification (grade),numeric,Original,Grade associated with the previous qualification.,Used
+Nacionality,categorical,Original,Student nationality.,Removed: near-constant
+Mother's qualification,categorical,Original,Mother's highest qualification category.,Used
+Father's qualification,categorical,Original,Father's highest qualification category.,Used
+Mother's occupation,categorical,Original,Mother's occupation category.,Used
+Father's occupation,categorical,Original,Father's occupation category.,Used
+Admission grade,numeric,Original,Admission/enrollment grade.,Used
+Displaced,categorical,Original,Whether the student is displaced.,Used
+Educational special needs,categorical,Original,Indicator for educational special needs.,Used
+Debtor,categorical,Original,Whether the student is a debtor.,Used
+Tuition fees up to date,categorical,Original,Whether tuition fees are up to date.,Used
+Gender,categorical,Original,Student gender.,Used
+Scholarship holder,categorical,Original,Whether the student holds a scholarship.,Used
+Age at enrollment,numeric,Original,Student age at enrollment.,Used
+International,categorical,Original,International student indicator.,Removed: near-constant
+Curricular unit 1st sem (credited),numeric,Original,Credits from first-semester curricular units.,Used
+Curricular unit 1st sem (enrolled),numeric,Original,Enrolled curricular units in first semester.,Used
+Curricular unit 1st sem (evaluations),numeric,Original,Evaluations in first semester.,Used
+Curricular unit 1st sem (approved),numeric,Original,Approved curricular units in first semester.,Used
+Curricular unit 1st sem (grade),numeric,Original,First-semester curricular unit grade.,Used
+Curricular unit 1st sem (without evaluations),numeric,Original,First-semester curricular units without evaluations.,Used
+Curricular unit 2nd sem (credited),numeric,Original,Credits from second-semester curricular units.,Used
+Curricular unit 2nd sem (enrolled),numeric,Original,Enrolled curricular units in second semester.,Used
+Curricular unit 2nd sem (evaluations),numeric,Original,Evaluations in second semester.,Used
+Curricular unit 2nd sem (approved),numeric,Original,Approved curricular units in second semester.,Used
+Curricular unit 2nd sem (grade),numeric,Original,Second-semester curricular unit grade.,Used
+Curricular unit 2nd sem (without evaluations),numeric,Original,Second-semester curricular units without evaluations.,Used
+Unemployment rate,numeric,Original,Macroeconomic unemployment rate.,Removed
+Inflation rate,numeric,Original,Macroeconomic inflation rate.,Removed
+GDP,numeric,Original,Gross domestic product indicator.,Removed
+Enrolled,categorical,Original,Enrollment-status category; excluded to avoid target leakage.,Removed
+Discipline_Group,categorical,Engineered,Grouped discipline/category derived from Course.,Used
+Target,binary,Engineered,Dropout=1 and Graduate=0; Enrolled rows are excluded.,Target
