@@ -149,6 +149,7 @@ The test set is kept separate from model selection and tuning. Candidate models 
 ## Author
 
 Sadiya Mohon Auti
+Tasmia amin
 
 ## Project Type
 
